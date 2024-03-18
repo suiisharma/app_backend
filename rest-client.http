@@ -1,0 +1,14 @@
+
+### Test submit code
+POST http://localhost:5000/submit
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "language": "Python (3.8.1)",
+    "stdin": "50",
+    "source_code": "num = int(input())\nprint(num ** 2)"
+}
+
+### Test get submissions
+GET http://localhost:5000/submissions
